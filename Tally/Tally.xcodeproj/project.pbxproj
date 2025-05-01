@@ -94,9 +94,9 @@
 			children = (
 				073B39872DC33696009C32FD /* Assets.xcassets */,
 				073B39992DC336B2009C32FD /* App */,
-				073B39982DC336AD009C32FD /* Models */,
-				073B39972DC336A8009C32FD /* Views */,
-				073B39962DC336A1009C32FD /* ViewModels */,
+				073B399C2DC3391E009C32FD /* Models */,
+				073B399B2DC33919009C32FD /* Views */,
+				073B399A2DC33913009C32FD /* ViewModels */,
 			);
 			path = Tally;
 			sourceTree = "<group>";
@@ -118,27 +118,6 @@
 			path = TallyUITests;
 			sourceTree = "<group>";
 		};
-		073B39962DC336A1009C32FD /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		073B39972DC336A8009C32FD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		073B39982DC336AD009C32FD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		073B39992DC336B2009C32FD /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +125,27 @@
 				073B39892DC33696009C32FD /* TallyApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		073B399A2DC33913009C32FD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		073B399B2DC33919009C32FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		073B399C2DC3391E009C32FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
