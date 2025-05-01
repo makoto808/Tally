@@ -13,6 +13,7 @@
 		073B39902DC33699009C32FD /* TallyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B398E2DC33699009C32FD /* TallyTests.swift */; };
 		073B39942DC3369B009C32FD /* TallyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39912DC3369B009C32FD /* TallyUITests.swift */; };
 		073B39952DC3369B009C32FD /* TallyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39922DC3369B009C32FD /* TallyUITestsLaunchTests.swift */; };
+		073B399E2DC3396B009C32FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B399D2DC3396B009C32FD /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		073B398E2DC33699009C32FD /* TallyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyTests.swift; sourceTree = "<group>"; };
 		073B39912DC3369B009C32FD /* TallyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyUITests.swift; sourceTree = "<group>"; };
 		073B39922DC3369B009C32FD /* TallyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		073B399D2DC3396B009C32FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		073B399B2DC33919009C32FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				073B399D2DC3396B009C32FD /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073B399E2DC3396B009C32FD /* HomeView.swift in Sources */,
 				073B398B2DC33696009C32FD /* ContentView.swift in Sources */,
 				073B398C2DC33696009C32FD /* TallyApp.swift in Sources */,
 			);
