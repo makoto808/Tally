@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tallyListVM = TallyListVM()
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $tallyListVM.navPath) {
             HomeView()
+                .navigationDestination(for: NavPath.self) { navPath in
+                    switch navPath {
+                    case .addCounter:
+                        NewCounterView()
+                    }
+                }
         }
+        .environment(tallyListVM)
     }
 }
 

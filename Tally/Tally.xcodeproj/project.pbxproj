@@ -17,6 +17,7 @@
 		073B39A02DC33A06009C32FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B399F2DC33A06009C32FD /* Extensions.swift */; };
 		073B39A22DC3400D009C32FD /* NewCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A12DC3400D009C32FD /* NewCounterView.swift */; };
 		073B39A52DC343F8009C32FD /* NavPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A42DC343F8009C32FD /* NavPath.swift */; };
+		073B39A72DC344BD009C32FD /* TallyListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A62DC344BD009C32FD /* TallyListVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		073B399F2DC33A06009C32FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		073B39A12DC3400D009C32FD /* NewCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCounterView.swift; sourceTree = "<group>"; };
 		073B39A42DC343F8009C32FD /* NavPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPath.swift; sourceTree = "<group>"; };
+		073B39A62DC344BD009C32FD /* TallyListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyListVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		073B399A2DC33913009C32FD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				073B39A62DC344BD009C32FD /* TallyListVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				073B39A22DC3400D009C32FD /* NewCounterView.swift in Sources */,
 				073B399E2DC3396B009C32FD /* HomeView.swift in Sources */,
 				073B398B2DC33696009C32FD /* ContentView.swift in Sources */,
+				073B39A72DC344BD009C32FD /* TallyListVM.swift in Sources */,
 				073B398C2DC33696009C32FD /* TallyApp.swift in Sources */,
 				073B39A52DC343F8009C32FD /* NavPath.swift in Sources */,
 				073B39A02DC33A06009C32FD /* Extensions.swift in Sources */,

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(TallyListVM.self) private var tallyListVM
     @State private var showingAddCounterSheet = false
     
     var body: some View {
@@ -18,12 +19,10 @@ struct HomeView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    
+                    tallyListVM.navPath.append(.addCounter)
                 } label: {
                     Text("+")
                 }
-                .sheet(isPresented: $showingAddCounterSheet,
-                       content: { NewCounterView()})
             }
         }
     }
