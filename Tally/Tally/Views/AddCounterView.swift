@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewCounterView: View {
+struct AddCounterView: View {
     @State private var text = ""
     var body: some View {
         VStack {
@@ -53,5 +53,5 @@ struct NewCounterView: View {
 }
 
 #Preview {
-    NewCounterView()
+    AddCounterView()
 }
