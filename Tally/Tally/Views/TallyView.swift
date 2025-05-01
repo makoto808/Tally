@@ -9,7 +9,53 @@ import SwiftUI
 
 struct TallyView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack {
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "chevron.left")
+                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "pencil.and.list.clipboard")
+                    }
+                    
+                    Spacer()
+                }
+                
+                //title
+                
+                //counter
+                
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "minus")
+                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
