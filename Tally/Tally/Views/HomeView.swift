@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var showingAddCounterSheet = false
+    
     var body: some View {
         ZStack {
             Text("Tap + to create a new counter")
                 .fontSecondary()
         }
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
+            ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     
                 } label: {
-                    Image(systemName: "calendar")
+                    Text("+")
                 }
+                .sheet(isPresented: $showingAddCounterSheet,
+                       content: { NewCounterView()})
             }
         }
     }

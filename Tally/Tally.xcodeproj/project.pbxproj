@@ -15,6 +15,8 @@
 		073B39952DC3369B009C32FD /* TallyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39922DC3369B009C32FD /* TallyUITestsLaunchTests.swift */; };
 		073B399E2DC3396B009C32FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B399D2DC3396B009C32FD /* HomeView.swift */; };
 		073B39A02DC33A06009C32FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B399F2DC33A06009C32FD /* Extensions.swift */; };
+		073B39A22DC3400D009C32FD /* NewCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A12DC3400D009C32FD /* NewCounterView.swift */; };
+		073B39A52DC343F8009C32FD /* NavPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A42DC343F8009C32FD /* NavPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		073B39922DC3369B009C32FD /* TallyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		073B399D2DC3396B009C32FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		073B399F2DC33A06009C32FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		073B39A12DC3400D009C32FD /* NewCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCounterView.swift; sourceTree = "<group>"; };
+		073B39A42DC343F8009C32FD /* NavPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				073B399D2DC3396B009C32FD /* HomeView.swift */,
+				073B39A12DC3400D009C32FD /* NewCounterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		073B399C2DC3391E009C32FD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				073B39A42DC343F8009C32FD /* NavPath.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073B39A22DC3400D009C32FD /* NewCounterView.swift in Sources */,
 				073B399E2DC3396B009C32FD /* HomeView.swift in Sources */,
 				073B398B2DC33696009C32FD /* ContentView.swift in Sources */,
 				073B398C2DC33696009C32FD /* TallyApp.swift in Sources */,
+				073B39A52DC343F8009C32FD /* NavPath.swift in Sources */,
 				073B39A02DC33A06009C32FD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
