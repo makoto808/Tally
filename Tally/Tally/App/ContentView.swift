@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tallyListVM = TallyListVM()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $tallyListVM.navPath) {
+            HomeView()
+//                .navigationDestination(for: NavPath.self) { navPath in
+//                    switch navPath {
+//                    case .addCounter:
+//                        AddCounterView()
+//                    }
+//                }
         }
-        .padding()
+        .environment(tallyListVM)
     }
 }
 
