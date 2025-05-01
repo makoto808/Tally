@@ -13,12 +13,12 @@ struct ContentView: View {
     var body: some View {
         NavigationStack(path: $tallyListVM.navPath) {
             HomeView()
-                .navigationDestination(for: NavPath.self) { navPath in
-                    switch navPath {
-                    case .addCounter:
-                        AddCounterView()
-                    }
-                }
+//                .navigationDestination(for: NavPath.self) { navPath in
+//                    switch navPath {
+//                    case .addCounter:
+//                        AddCounterView()
+//                    }
+//                }
         }
         .environment(tallyListVM)
     }

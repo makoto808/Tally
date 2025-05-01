@@ -17,11 +17,29 @@ extension Text {
             .minimumScaleFactor(0.30)
             .padding(.horizontal, 20)
     }
+    
+//    func fontAddCounter() -> some View {
+//        self.font(.custom("ArialRoundedMTBold", size: 200))
+//            .foregroundStyle(.secondary)
+//            .lineLimit(1)
+//            .allowsTightening(true)
+//            .minimumScaleFactor(0.30)
+//            .padding(.horizontal, 20)
+//    }
 }
 
 extension View {
     func fontSecondaryTitle() -> some View {
         self.font(.custom("ArialRoundedMTBold", size: 25))
+            .foregroundStyle(.secondary)
+            .lineLimit(1)
+            .allowsTightening(true)
+            .minimumScaleFactor(0.30)
+            .padding(.horizontal, 20)
+    }
+    
+    func fontAddCounter() -> some View {
+        self.font(.custom("ArialRoundedMTBold", size: 200))
             .foregroundStyle(.secondary)
             .lineLimit(1)
             .allowsTightening(true)

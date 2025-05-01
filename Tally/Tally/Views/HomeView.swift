@@ -19,9 +19,14 @@ struct HomeView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    tallyListVM.navPath.append(.addCounter)
+                    showingAddCounterSheet.toggle()
                 } label: {
                     Text("+")
+                        .frame(width: .infinity, alignment: .trailing)
+                        .fontAddCounter()
+                }
+                .sheet(isPresented: $showingAddCounterSheet) {
+                    AddCounterView()
                 }
             }
         }
