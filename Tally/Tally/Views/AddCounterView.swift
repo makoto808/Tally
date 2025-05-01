@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct AddCounterView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @State private var text = ""
+    
+    
     var body: some View {
         VStack {
             Spacer()
             
             HStack {
-                Text("Cancel").fontSecondary()
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Cancel").fontSecondary()
+                }
                 
                 Spacer()
                 
-                Text("Create").fontSecondary()
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Create").fontSecondary()
+                }
             }
             
             Spacer()
@@ -26,6 +38,7 @@ struct AddCounterView: View {
             Text("Title").fontSecondary()
                 .frame(maxWidth: .infinity, alignment: .leading)
             TextField("Insert Title", text: $text)
+                .fontSecondaryTitle()
             
                 
             Spacer()
@@ -33,22 +46,26 @@ struct AddCounterView: View {
             Text("Starting Value").fontSecondary()
                 .frame(maxWidth: .infinity, alignment: .leading)
             TextField("0", text: $text)
+                .fontSecondaryTitle()
             
             Spacer()
             
             Text("Step").fontSecondary()
                 .frame(maxWidth: .infinity, alignment: .leading)
             TextField("1", text: $text)
+                .fontSecondaryTitle()
             
             Spacer()
             
             Text("Goal (Optional)").fontSecondary()
                 .frame(maxWidth: .infinity, alignment: .leading)
             TextField("Insert Goal", text: $text)
+                .fontSecondaryTitle()
             
             Spacer()
         }
         .padding(20)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
