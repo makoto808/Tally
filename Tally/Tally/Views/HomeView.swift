@@ -8,25 +8,26 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Environment(TallyListVM.self) private var tallyListVM
+//    @Environment(TallyListVM.self) private var tallyListVM
     @State private var showingAddCounterSheet = false
+    @State private var t: Bool = false
     
     var body: some View {
         ZStack {
-            Text("Tap + to create a new counter")
-                .fontSecondary()
-        }
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    showingAddCounterSheet.toggle()
-                } label: {
-                    Text("+")
-                        .frame(width: .infinity, alignment: .trailing)
-                        .fontAddCounter()
-                }
-                .sheet(isPresented: $showingAddCounterSheet) {
-                    AddCounterView()
+            VStack {
+                
+                if t == true {
+                    
+                } else {
+                    Button() {
+                        showingAddCounterSheet.toggle()
+                    } label: {
+                        Text("Tap To Create A New Counter")
+                            .fontPrimary()
+                    }
+                    .sheet(isPresented: $showingAddCounterSheet) {
+                        AddTallyView()
+                    }
                 }
             }
         }

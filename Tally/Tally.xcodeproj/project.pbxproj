@@ -15,9 +15,10 @@
 		073B39952DC3369B009C32FD /* TallyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39922DC3369B009C32FD /* TallyUITestsLaunchTests.swift */; };
 		073B399E2DC3396B009C32FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B399D2DC3396B009C32FD /* HomeView.swift */; };
 		073B39A02DC33A06009C32FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B399F2DC33A06009C32FD /* Extensions.swift */; };
-		073B39A22DC3400D009C32FD /* AddCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A12DC3400D009C32FD /* AddCounterView.swift */; };
+		073B39A22DC3400D009C32FD /* AddTallyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A12DC3400D009C32FD /* AddTallyView.swift */; };
 		073B39A52DC343F8009C32FD /* NavPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A42DC343F8009C32FD /* NavPath.swift */; };
 		073B39A72DC344BD009C32FD /* TallyListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A62DC344BD009C32FD /* TallyListVM.swift */; };
+		073B39A92DC36EF4009C32FD /* TallyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B39A82DC36EF4009C32FD /* TallyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +50,10 @@
 		073B39922DC3369B009C32FD /* TallyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		073B399D2DC3396B009C32FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		073B399F2DC33A06009C32FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		073B39A12DC3400D009C32FD /* AddCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterView.swift; sourceTree = "<group>"; };
+		073B39A12DC3400D009C32FD /* AddTallyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTallyView.swift; sourceTree = "<group>"; };
 		073B39A42DC343F8009C32FD /* NavPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPath.swift; sourceTree = "<group>"; };
 		073B39A62DC344BD009C32FD /* TallyListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyListVM.swift; sourceTree = "<group>"; };
+		073B39A82DC36EF4009C32FD /* TallyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				073B399D2DC3396B009C32FD /* HomeView.swift */,
-				073B39A12DC3400D009C32FD /* AddCounterView.swift */,
+				073B39A12DC3400D009C32FD /* AddTallyView.swift */,
+				073B39A82DC36EF4009C32FD /* TallyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,9 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073B39A22DC3400D009C32FD /* AddCounterView.swift in Sources */,
+				073B39A22DC3400D009C32FD /* AddTallyView.swift in Sources */,
 				073B399E2DC3396B009C32FD /* HomeView.swift in Sources */,
 				073B398B2DC33696009C32FD /* ContentView.swift in Sources */,
+				073B39A92DC36EF4009C32FD /* TallyView.swift in Sources */,
 				073B39A72DC344BD009C32FD /* TallyListVM.swift in Sources */,
 				073B398C2DC33696009C32FD /* TallyApp.swift in Sources */,
 				073B39A52DC343F8009C32FD /* NavPath.swift in Sources */,

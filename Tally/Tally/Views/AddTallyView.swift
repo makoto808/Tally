@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct AddCounterView: View {
+struct AddTallyView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var text = ""
+    @State private var titleText = ""
+    @State private var startValue = 0
+    @State private var step = 1
+    @State private var goalText = ""
     
     
     var body: some View {
@@ -21,7 +24,9 @@ struct AddCounterView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Text("Cancel").fontSecondary()
+                    Text("Cancel")
+                        .fontPrimary()
+                        .foregroundStyle(.red)
                 }
                 
                 Spacer()
@@ -29,38 +34,37 @@ struct AddCounterView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Text("Create").fontSecondary()
+                    Text("Create").fontPrimary()
                 }
             }
             
             Spacer()
             
-            Text("Title").fontSecondary()
+            Text("Title").fontPrimary()
                 .frame(maxWidth: .infinity, alignment: .leading)
-            TextField("Insert Title", text: $text)
-                .fontSecondaryTitle()
-            
-                
-            Spacer()
-            
-            Text("Starting Value").fontSecondary()
-                .frame(maxWidth: .infinity, alignment: .leading)
-            TextField("0", text: $text)
-                .fontSecondaryTitle()
+            TextField("Insert Title", text: $titleText)
+                .fontAddTallyTitle()
             
             Spacer()
             
-            Text("Step").fontSecondary()
+            Text("Starting Value").fontPrimary()
                 .frame(maxWidth: .infinity, alignment: .leading)
-            TextField("1", text: $text)
-                .fontSecondaryTitle()
+            TextField("0", value: $startValue, format: .number)
+                .fontAddTallySecondary()
             
             Spacer()
             
-            Text("Goal (Optional)").fontSecondary()
+            Text("Step").fontPrimary()
                 .frame(maxWidth: .infinity, alignment: .leading)
-            TextField("Insert Goal", text: $text)
-                .fontSecondaryTitle()
+            TextField("1", value: $step, format: .number)
+                .fontAddTallySecondary()
+            
+            Spacer()
+            
+            Text("Goal (Optional)").fontPrimary()
+                .frame(maxWidth: .infinity, alignment: .leading)
+            TextField("Insert Goal", text: $goalText)
+                .fontAddTallySecondary()
             
             Spacer()
         }
@@ -70,5 +74,5 @@ struct AddCounterView: View {
 }
 
 #Preview {
-    AddCounterView()
+    AddTallyView()
 }

@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 extension Text {
-    func fontSecondary() -> some View {
+    func fontPrimary() -> some View {
         self.font(.custom("ArialRoundedMTBold", size: 25))
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.primary)
             .lineLimit(1)
             .allowsTightening(true)
             .minimumScaleFactor(0.30)
@@ -29,8 +29,9 @@ extension Text {
 }
 
 extension View {
-    func fontSecondaryTitle() -> some View {
+    func fontAddTallySecondary() -> some View {
         self.font(.custom("ArialRoundedMTBold", size: 25))
+            .keyboardType(.numberPad)
             .foregroundStyle(.secondary)
             .lineLimit(1)
             .allowsTightening(true)
@@ -38,8 +39,8 @@ extension View {
             .padding(.horizontal, 20)
     }
     
-    func fontAddCounter() -> some View {
-        self.font(.custom("ArialRoundedMTBold", size: 200))
+    func fontAddTallyTitle() -> some View {
+        self.font(.custom("ArialRoundedMTBold", size: 25))
             .foregroundStyle(.secondary)
             .lineLimit(1)
             .allowsTightening(true)

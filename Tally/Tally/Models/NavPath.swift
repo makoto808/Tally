@@ -8,5 +8,5 @@
 import Foundation
 
 enum NavPath: Hashable {
-    case addCounter
+    case addTally
 }
